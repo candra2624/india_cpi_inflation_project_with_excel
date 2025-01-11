@@ -1,0 +1,65 @@
+Overview:=> In India, the Consumer Price Index (CPI) is used to measure inflation, and it involves a fixed basket of goods and services. 
+This basket is comprehensive and includes a wide array of items that an average Indian consumer uses. These items are not limited to just food and 
+clothing but extend to transportation, medical care, electricity, education, and almost every other category that involves expenditure of money. 
+The CPI is calculated by comparing the general price level in the markets during a particular time period with a base year. 
+The items in the CPI basket are classified across various categories like food and beverages, clothing, housing, fuel and light, and recreation, 
+among others.
+
+The CPI basket contains categories like food and beverages, housing, apparel, transportation, medical care, and more. The weight of each category 
+in the total index might differ based on its relative importance to the average consumer expenditure but for the purpose of this analysis 
+consider equal weights across all categories.
+
+Dataset:=>
+• The dataset provided is a CPI inflation index extracted from the GOI website. 
+• Each number represents the index value for that month and category. 
+• There are missing values in the dataset; use suitable imputation techniques (like moving averages) if required. 
+CPI (Consumer Price Index) Information: 
+• The CPI is an index and not a direct measure of price levels. But rather a relative indicator used to measure inflation or the average change 
+in prices over time. Consumer price index (CPI) values cannot br summe across different months to derive meaningful insights or aggregate measures.  
+• Different types of CPI: 
+o CPI-U (Urban): Reflects spending patterns for urban consumers. 
+o CPI-R (Rural): Reflects spending patterns for rural consumers. 
+o The General Index gives the overall inflation for the month, combining all categories. 
+
+
+Problem Statement:=> You are working with the National Statistical Office, which releases inflation numbers in India. As an analyst, you are 
+provided with CPI data and are equpped to find out Key Trends and deep dive into the data to answer the the following questions:
+
+1] Based on the latest month's data, identify the Contribution of Broader Categories to CPI: 
+o Identify the contribution of different 
+broader categories (food, energy, transportation, education, etc.) towards the CPI basket. Create broader categories by combining similar 
+subcategories (e.g., Meals, Beverages, Cereals into “Food”). 
+o Which broader category has the highest contribution towards CPI calculation.
+o Contributions is Calculate by evaluating the underlying index values for broader category and should add to 100% when contribution from 
+different broader categories are added.
+
+2] A trend of Y-O-Y increase in CPI(rural+urban) inflation starting 2017 for the entire basket of products combined.
+o Create a graph depcting the growth rate Y-o-Y and identify the highest inflation rate. 
+o Highlight the reason why the year has the highest highest inflation rate (based on research). 
+
+3] With India's retail inflation reaching a 3-month high of 5.55% in November 2023, largely due to a sharp rise in food prices. 
+Analyze the following for 12 months ending May'23.
+o Investigate trends in the prices of broader food bucket category and evaluate month-on-month changes. Highlight month with highest and lowest food
+inflation.
+o Identify the absolute changes in inflation over the same 12 months period and identify the biggest individual category contributor (only within
+broader food category) towards inflation.
+
+4] Investigate how the onset and progression of the COVID-19 pandemic affected inflation rates in India. Analyze the impact of key pandemic milestone
+(first lockdown) on the CPI Inflation percentage, specially focus on categories like healthcare food, and essential service.
+
+Hint:=>You can consider March 2020 as the onset of COVID-19 and can compare the inflation trend is a change in inflation percentage before and after.
+
+5] Investigate how major global economic events (like imported crude oil price fluctuations) have influenced India's inflation. This can include an
+analysis of imported goods and their price trends.
+o For the purpose of this analysis, focus only on the imported oil price fluctuations for years 2021 to 2023 (Month-on-Month)
+o Identify trends in oil price change with change in inflation prices of all the categories and identify category whose inflation price strongly 
+changes with fluctuations in imported oil price (Hint:=> You can use=correl function)
+
+
+Other Information:=>
+[1] Percentage Change: To understand inflation or deflation trends, calculate the percentage change in CPI between two periods (e.g.. year-over-year or month- over-month). This shows how much prices have increased or decreased relative to the earlier period.
+[2] For example, to calculate the monthly inflation rate between two consecutive months:
+• Monthly Inflation rate=(CPI in current month-CPI in previous month)/CPI in previous month)x100
+[3] Annual Inflation Rate: For longer periods, such as yearly inflation, use the CPI values at the start and end of the period. This helps in understanding the overall inflation experienced over the year.
+• Annual Inflation rate= ((CPI at end of year-CPI at start of year)/ CPI at start of year) x100
+• Any month can be considered as start of the year, then end of the year month will be considered 12 months after the month you have selected for start of the year
